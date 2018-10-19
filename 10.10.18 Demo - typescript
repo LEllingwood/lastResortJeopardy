@@ -1,0 +1,47 @@
+typescript translates to javascript.  it turns into javascript once put through a compiler.
+
+typescript does not coerce; it literally accepts that you meant to give it what you gave it.
+
+if you assign a variable to a particular kind of variable, it will not allow you to give the variable anything other than that particular type.  it will break the code.  it will also intuit the kind of variable it's supposed to be by the value you assign to the variable.   this is helpful when it comes to errors.
+
+the compiler will take this information and compile it into javascript, but the code will have broken when the wrong type of value is assigned.  
+
+The word "any" will allow you to assign either string or number. i.e. let j: any = "a dog smiles" will allow you to later assign  a number to j. BUT YOU HAVE TO DO THIS AFFIRMATIVELY.  
+
+you can use this to write with the most recent version of code and the compiler will translate it into js that will work with various systems.  In other words, you can write language that is cutting edge that will show up on old browser.
+
+typescript works with all kinds of variable.  AND you can create your own variable types.  
+
+angular uses typescript by default
+
+npm install --save dev typescript  (means save as a development dependency)
+
+tsc index.ts will compile the index.ts file into an index.js file.
+
+you work in your .ts file; you compile into your .js file.
+
+npm install --save -dev @types/node  (because node doesn't natively understand typescript).
+
+microsoft made both typescript and vscode, so they work well together and intuitively.  
+
+typescript gives you extra error messaging, which means you miss fewer things.  
+
+talk to taylor about using typescript. and what it means for grading.
+
+typescript is targeting an older version of javascript, so it's using var.  the upside is that it works in older browswers.  you could tell typescript to stop using var (and lose the benefit of being used by older browsers).  
+
+you can put the command to compile in the start script:
+    "start": "tsc index.ts && node index.js"
+
+    the && means that if the first section doesn't run, none of it will (i.e. if the compiling doesn't happen, it'll stop).
+
+you can specify a typescript configuration file to get particular behaviors.  (tsc init) listed under "target".  the tool tip in vs editor will give you the options available to you. 
+
+normal vanilla js is typescript compatible. 
+
+typescript is a superset of javascript
+
+app.use(bodyParser.json()); // is teenager code 
+replaced with express.json
+
+if you install nodemon as a dev dependency, it will restart automatically.  (dave is working out the bug in using nodemon for express).

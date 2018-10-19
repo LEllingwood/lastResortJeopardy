@@ -1,0 +1,25 @@
+CRUD 
+
+Create, read, update, delete (get, post delete, put, patch)
+
+start a server (app.listen(3000, callback function))
+
+
+app.get
+app.post
+app.put
+etc
+
+this is front end code that will sen stuff back to the server.  
+
+app.post("the url that you want this to be listening on" "/users", (request, response) callback function)
+
+response.send ({json})
+response.status -this is the status you're sending back (201, 409)
+
+201 means created
+409 means conflict (because the username is already taken, so server can't create that entity).
+400 means bad request 
+
+
+app.listen is the final thing you need to write to get the express server to be listening on this port.  it's normally at the bottom of your app.js file.  

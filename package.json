@@ -1,0 +1,23 @@
+{
+  "name": "jeopardy",
+  "version": "1.0.0",
+  "description": "pick six categories of questions.  {television (67) , american history(780), hodgepodge (227), word origins (223), musical instruments(184), mythology(680)}",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/Ellingwood18/jeopardy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Ellingwood18/jeopardy/issues"
+  },
+  "homepage": "https://gitlab.com/Ellingwood18/jeopardy#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3"
+  }
+}
